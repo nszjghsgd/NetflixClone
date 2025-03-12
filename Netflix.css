@@ -1,0 +1,154 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.header img {
+  width: 125px; 
+  height: auto; 
+  margin-right: 10px;
+}
+
+.header h1 {
+ color: white;
+  margin: 0;
+  flex-grow: 1; 
+  text-align: left; 
+}
+
+.navigation{
+display: flex;
+margin-bottom: 20px;
+}
+.navigation a{
+  color: fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s;
+}
+.navigation a:hover {
+background-color: gray;
+}
+
+.poster{
+margin-top: 30px;
+background-image: url("https://i.ytimg.com/vi/_inKs4eeHiI/maxresdefault.jpg");
+background-size: cover;
+background-position: center;
+height: 1250px;
+}
+
+.movies {
+display: flex;
+grid-template-columns: repeat(5,1fr);
+grid-gap: 20px;
+overflow-x: auto; 
+margin-top: 20px;
+padding-bottom: 20px;
+-webkit-overflow-scrolling: touch; 
+}
+
+.movie {
+flex: 0 0 calc(20% - 20px); 
+margin-right: 20px;
+background-color: #fff;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+overflow: hidden;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie img {
+width: 100%;
+height: 50vh;
+object-fit: cover;
+border-radius: 5px 5px 0 0;
+}
+
+.movie-content {
+padding: 10px;
+}
+
+.movie-title {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.movie-rating {
+color: #f90;
+margin-bottom: 5px;
+}
+
+.movie-description {
+font-size: 0.8em;
+color: #666;
+}
+
+.movie:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.search-button {
+background-color: transparent;
+border: none;
+color: white;
+font-size: 16px;
+cursor: pointer;
+margin-left: auto; /* Push the button to the right */
+padding: 8px 16px;
+margin-top: 5px; /* Adjust the margin-top as needed */
+}
+
+.search-button:hover {
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 5px;
+}
+
+.featured-movie {
+  display: flex;
+  margin-top: 30px;
+  background-image: url("https://miro.medium.com/v2/resize:fit:980/1*xewIOP7tOPMOiLEISAW5hA.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust the height as needed */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.featured-movie img {
+  width: 30%; /* Adjust the size as needed */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.featured-movie .movie-content {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.featured-movie .movie-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featured-movie .movie-rating {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.featured-movie .movie-description {
+  font-size: 1em;
+}
